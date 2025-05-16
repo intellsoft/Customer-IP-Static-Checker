@@ -106,12 +106,4 @@ MIT License © 2023 [Ali Abbaspour](https://intellsoft.ir)
 [![Website](https://img.shields.io/badge/Visit-Website-blue?style=flat-square)](https://intellsoft.ir)
 ```
 
----
-
-### راهنمای ذخیره فایل:
-۱. محتوای بالا را کپی کنید.  
-۲. یک فایل جدید در ادیتور متن (مثل Notepad یا VS Code) باز کنید.  
-۳. محتوا را جایگذاری و با نام `README.md` ذخیره کنید.  
-۴. فایل را در کنار `ipstatic.py` قرار دهید.  
-
 ✅ آماده است!
