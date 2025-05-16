@@ -7,8 +7,7 @@
 
 یک ابزار پایتونی برای بررسی وضعیت آنلاین/آفلاین بودن آیپی و پورتهای مشتریان با رابط کاربری گرافیکی.
 
-![پایتون](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
-![پلتفرم](https://img.shields.io/badge/Platform-Windows-lightgrey?logo=windows)
+![نرم‌افزار Customer IP Static Checker، ابزاری هوشمند برای نظارت بر وضعیت شبکه](https://intellsoft.ir/%d9%86%d8%b1%d9%85%d8%a7%d9%81%d8%b2%d8%a7%d8%b1-customer-ip-static-checker-%d8%a7%d8%a8%d8%b2%d8%a7%d8%b1%db%8c-%d9%87%d9%88%d8%b4%d9%85%d9%86%d8%af-%d8%a8%d8%b1%d8%a7%db%8c-%d9%86%d8%b8%d8%a7%d8%b1/)
 
 ## ✨ ویژگیهای کلیدی
 - ✅ نمایش وضعیت بلادرنگ با رنگبندی متفاوت
