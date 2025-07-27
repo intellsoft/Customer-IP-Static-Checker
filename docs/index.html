@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.seo.title }}</title>
+    <meta name="description" content="{{ site.seo.description }}">
+    <meta name="keywords" content="{{ site.seo.keywords | join: ', ' }}">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>{{ site.title }}</h1>
+                <p>{{ site.description }}</p>
+                <div class="cta-buttons">
+                    <a href="#download" class="btn primary-btn">دانلود نرم‌افزار</a>
+                    <a href="{{ site.github_repo }}" class="btn secondary-btn">مشاهده کد منبع</a>
+                </div>
+            </div>
+            <div class="header-image">
+                <img src="assets/screenshot.png" alt="نمای نرم‌افزار بررسی IP ثابت مشتریان">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="features">
+            <h2>ویژگی‌های اصلی</h2>
+            <div class="features-grid">
+                {% for feature in site.features %}
+                <div class="feature-card">
+                    <div class="feature-icon">{{ feature.icon }}</div>
+                    <h3>{{ feature.title }}</h3>
+                    <p>{{ feature.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section id="applications">
+            <h2>کاربردهای نرم‌افزار</h2>
+            <div class="applications-container">
+                <ul class="applications-list">
+                    {% for application in site.applications %}
+                    <li>{{ application }}</li>
+                    {% endfor %}
+                </ul>
+                <div class="applications-image">
+                    <img src="assets/network.png" alt="مدیریت IP مشتریان">
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits">
+            <h2>مزایای استفاده از ابزار</h2>
+            <div class="benefits-container">
+                <div class="benefit">
+                    <h3>🔒 افزایش امنیت</h3>
+                    <p>کاهش ریسک دسترسی غیرمجاز با شناسایی سریع تغییرات IP</p>
+                </div>
+                <div class="benefit">
+                    <h3>⏱️ صرفه‌جویی در زمان</h3>
+                    <p>حذف فرآیندهای دستی بررسی IP مشتریان</p>
+                </div>
+                <div class="benefit">
+                    <h3>📊 گزارش‌گیری حرفه‌ای</h3>
+                    <p>دسترسی به تاریخچه کامل تغییرات IP مشتریان</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>نحوه عملکرد سیستم</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>ورود اطلاعات مشتریان</h3>
+                    <p>لیست مشتریان با IP ثابت را وارد سیستم کنید</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>تنظیم بازه بررسی</h3>
+                    <p>فاصله زمانی بررسی IP‌ها را مشخص کنید</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>فعال‌سازی سیستم</h3>
+                    <p>سیستم را فعال کرده و نظارت آغاز می‌شود</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>دریافت هشدار</h3>
+                    <p>در صورت تغییر IP، هشدار فوری دریافت می‌کنید</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download">
+            <h2>دانلود نرم‌افزار</h2>
+            <div class="download-section">
+                <div class="version-info">
+                    <p>نسخه فعلی: <strong>1.2.0</strong></p>
+                    <p>حجم: <strong>8MB</strong></p>
+                    <div class="system-requirements">
+                        <h3>نیازمندی‌های سیستم:</h3>
+                        <ul>
+                            <li>ویندوز 10 و بالاتر</li>
+                            <li>حداقل 1GB RAM</li>
+                            <li>اتصال اینترنت</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="download-options">
+                    <div class="download-buttons">
+                        <a href="#" class="btn download-btn">
+                            <span class="os-icon">🪟</span>
+                            نسخه ویندوز
+                        </a>
+                        <a href="#" class="btn download-btn">
+                            <span class="os-icon">🐧</span>
+                            نسخه لینوکس
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>نظرات کاربران</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <p>"این ابزار به ما کمک کرد تا امنیت دسترسی مشتریان به سامانه را به شکل چشمگیری افزایش دهیم و تغییرات مشکوک را سریعاً شناسایی کنیم."</p>
+                    <div class="author">
+                        <strong>محمد رضایی</strong>
+                        <span>مدیر فنی شرکت داده‌پردازان</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"قبلاً به صورت دستی IP مشتریان را چک می‌کردیم که بسیار زمان‌بر بود. با این نرم‌افزار در زمان و منابع صرفه‌جویی زیادی شد."</p>
+                    <div class="author">
+                        <strong>فاطمه حسینی</strong>
+                        <span>سرپرست تیم پشتیبانی وب‌هایت</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>ابزار بررسی IP ثابت مشتریان</h3>
+                    <p>راه‌حل حرفه‌ای برای مدیریت و نظارت بر IP مشتریان</p>
+                </div>
+                <div class="footer-links">
+                    <h4>لینک‌های مفید</h4>
+                    <ul>
+                        <li><a href="{{ site.github_repo }}">صفحه پروژه در GitHub</a></li>
+                        <li><a href="{{ site.author.url }}">وبسایت اینتل سافت</a></li>
+                        <li><a href="mailto:{{ site.author.email }}">پشتیبانی فنی</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>ارتباط با ما</h4>
+                    <p>ایمیل: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+                    <p>وبسایت: <a href="{{ site.author.url }}">{{ site.author.url }}</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© {{ site.time | date: '%Y' }} توسعه داده شده توسط {{ site.author.name }}. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
